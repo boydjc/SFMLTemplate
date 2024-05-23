@@ -6,6 +6,7 @@ Game::Game() {}
 Game::~Game() {}
 
 void Game::run() {
+
     while(this->renderWindow.isOpen()) {
         handleInput();
         updateScene();
@@ -21,6 +22,7 @@ void Game::handleInput() {
 
 void Game::updateScene() {
     /* TODO */
+    sf::Time dt = this->clock.restart();
 }
 
 void Game::drawScene() {
