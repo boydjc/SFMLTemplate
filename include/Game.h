@@ -12,7 +12,6 @@ class Game {
         void drawScene();
     private:
         sf::Clock clock;
-        sf::RenderWindow renderWindow = sf::RenderWindow(sf::VideoMode(1920, 1080), "Test Game", sf::Style::Fullscreen);
-
+        sf::RenderWindow renderWindow;
 
 };

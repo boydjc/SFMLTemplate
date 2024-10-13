@@ -2,7 +2,10 @@
 
 #include <SFML/Graphics.hpp>
 
-Game::Game() {}
+Game::Game() {
+    this->renderWindow.create(sf::VideoMode(1920, 1080), "Test Game", sf::Style::Fullscreen);
+}
+
 Game::~Game() {}
 
 void Game::run() {
